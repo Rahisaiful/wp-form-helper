@@ -1,5 +1,5 @@
 # wp-form-helper
-wordpress dynamically form and input field implementation system
+wordpress dynamic form and input field implementation system
 
 # How to use 
 include wpFormHelper.php in your functions.php and make dynamic form any where .
