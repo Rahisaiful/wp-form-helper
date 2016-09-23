@@ -35,7 +35,7 @@ wpfh_input_fields(
   	)
 );
 ```
-### support field type
+### support input field type
 * text
 * number
 * email
