@@ -3,7 +3,7 @@ wordpress dynamic form and input field implementation system
 
 # How to use 
 include wpFormHelper.php in your functions.php and make dynamic form any where .
-# form opening function 
+## form opening function 
 ```php
 wpfh_form_open(
   array(
@@ -15,7 +15,7 @@ wpfh_form_open(
   	)
 );
 ```
-# input fields call function 
+## input fields call function 
 ```php
 wpfh_input_fields(
   array(
@@ -44,7 +44,7 @@ wpfh_input_fields(
 * textarea
 * select
 
-# submit button call function
+## submit button call function
 ```php
 wpfh_submit_btn(
   array(
@@ -54,7 +54,7 @@ wpfh_submit_btn(
   	)
 );
 ```
-# form closing function 
+## form closing function 
 ```php
 wpfh_form_close();
 ```
