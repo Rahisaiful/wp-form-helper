@@ -4,6 +4,7 @@ wordpress dynamically form and input field implementation system
 # How to use 
 include wpFormHelper.php in your functions.php and make dynamic form any where .
 # form opening function 
+```php
 wpfh_form_open(
   array(
   		'id' 	 => '',
@@ -13,8 +14,9 @@ wpfh_form_open(
   		'enctype' => ''
   	)
 );
-
+```
 # input fields call function 
+```php
 wpfh_input_fields(
   array(
   		'type' 			=> 'text',
@@ -32,8 +34,9 @@ wpfh_input_fields(
   		'custom_attr'	=> array()
   	)
 );
-
+```
 # submit button call function
+```php
 wpfh_submit_btn(
   array(
   		'id' 	 => '',
@@ -41,8 +44,10 @@ wpfh_submit_btn(
   		'value'  => ''
   	)
 );
-
+```
 # form closing function 
-wpfh_form_close()
+```php
+wpfh_form_close();
+```
 
 
