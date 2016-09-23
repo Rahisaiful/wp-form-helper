@@ -35,6 +35,14 @@ wpfh_input_fields(
   	)
 );
 ```
+### support field type
+* text
+* number
+* email
+* hidden
+* url
+* textarea
+* select
 # submit button call function
 ```php
 wpfh_submit_btn(
