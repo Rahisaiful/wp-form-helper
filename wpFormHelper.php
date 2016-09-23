@@ -84,11 +84,11 @@ function wpfh_html_attr( $attrs = array() ){
 function wpfh_form_open( $args = array() ){
 	
 	$default = array(
-		'id' 	 => '',
-		'class'	 => '',
-		'action' => '',
-		'method' => '',
-		'encpty' => '',
+		'id' 	  => '',
+		'class'	  => '',
+		'action'  => '',
+		'method'  => '',
+		'enctype' => '',
 	);
 	
 	$getattrs = wp_parse_args( $args, $default );
