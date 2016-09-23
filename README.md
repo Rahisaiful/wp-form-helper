@@ -10,7 +10,7 @@ wpfh_form_open(
   		'class'	 => '',
   		'action' => '',
   		'method' => '',
-  		'enctype' => '',
+  		'enctype' => ''
   	)
 );
 
@@ -29,7 +29,7 @@ wpfh_input_fields(
   		  '2' => 'Two',
   		  '3' => 'Three',
   		),
-  		'custom_attr'	=> array(),
+  		'custom_attr'	=> array()
   	)
 );
 
