@@ -48,10 +48,23 @@ function wpfh_input_fields( $args = array() ){
 			if( $field['options'] ){
 				echo '<select '.implode(' ', $custom_attrs ).'>';
 					foreach( $field['options'] as $key => $value ){					
-						printf( "<option value='%s'%s>%s</option>\n", $key, selected( $field['options'], $key, false ), $value  );
+						printf( "<option value='%s' %s>%s</option>\n", $key, selected( $field['value'], $key, false ), $value  );
 					}
 				echo '</select>';
 			}
+			break;
+		case 'checkbox':
+                printf( '<input type="'.$field['type'].'"'. implode(' ', $custom_attrs ).' %s />', ( $field['value'] ) ? 'checked' :'' );
+			break;
+		case 'radio':
+                if( $field['options'] ){
+                    foreach( $field['options'] as $key => $value ){
+                        echo '<label class="radio-inline">';
+                        printf('<input type="radio" %s '.implode(' ', $custom_attrs ).' value="'.esc_attr( $key ).'">', checked( $field['value'], $key, false ) );
+                        echo '<span>'.$value.'</span>';
+                        echo '</label>';
+                    }
+                }
 			break;
 		case 'textarea':
 			echo '<textarea '.implode(' ',$custom_attrs ).'>'.esc_textarea( $field['value'] ).'</textarea>';
