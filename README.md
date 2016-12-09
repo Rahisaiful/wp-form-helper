@@ -43,6 +43,8 @@ wpfh_input_fields(
 * url
 * textarea
 * select
+* checkbox
+* radio
 
 ## submit button call function
 ```php
